@@ -28,8 +28,8 @@ app.use('/api/income',incomeRoutes)
 app.use('/api/expense',expenseRoutes)
 app.use('/api/dashboard',dashboardRoutes)
 
-app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello from API' });
+app.get('/', (req, res) => {
+  res.send('Hello from API');
 });
 
 
